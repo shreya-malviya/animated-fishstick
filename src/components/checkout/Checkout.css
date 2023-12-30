@@ -1,0 +1,274 @@
+.checkout-section{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+}
+
+.checkout-body{
+    width: 69%;
+    height: 90%;
+}
+
+.checkout-body .heading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.checkout-body .heading .icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.1s ease-in;
+}
+
+.checkout-body .heading .icon:hover{
+    color: #666;
+}
+
+.checkout-body .heading h2{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.delivery-detail {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.delivery-detail h3{
+    text-transform: capitalize;
+}
+
+.delivery-detail .address{
+    background-color: #f0f0f0;
+    padding: 5px 0px 5px 11px;
+    width: 50%;
+    border-radius: 4px;
+    color: #666;
+    text-transform: capitalize;
+    margin: 7px 0px;
+}
+
+.delivery-detail .address .icon{
+    margin-right: 7px;
+}
+
+.delivery-detail .phone {
+    margin: 7px 0px;
+    border: 3px solid #f0f0f0;
+    padding: 5px 0px 5px 11px;
+    width: 69%;
+    border-radius: 4px;
+    color: #666;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.delivery-detail .phone .icon {
+    margin-right: 7px;
+}
+
+.order-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 34px 0px 18px 0px;
+}
+
+.order-list h4{
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.promo-code{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 50px 0px 18px 0px;
+}
+
+.promo-code h4{
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    height: 20%;
+}
+
+.promo-code .code{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    padding-left: 2px;
+}
+
+.promo-code .code input{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.promo-code-btn {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    text-transform: capitalize;
+    background-color: #f0f0f0;
+}
+
+.promo-code-btn:hover{
+    background-color: #cccccc;
+}
+
+.order-summary {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 34px 0px 18px 0px;
+}
+
+.order-summary h3{
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.order-summary div{
+    width: 400px;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-summary div span:nth-child(1) {
+    width: 75%;
+    text-align: left;
+    text-transform: capitalize;
+    color: #111;
+}
+
+.order-summary div span:nth-child(2) {
+    width: 25%;
+    text-align: left;
+    font-size: 1rem;
+    color: #666;
+}
+
+.order-summary div span:nth-child(2) .icon {
+    font-weight: lighter;
+}
+
+.total {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total .total-amount {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.total .total-amount h3{
+    text-transform: uppercase;
+}
+
+.total .total-amount span {
+    color: #666;
+}
+
+.total a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
+    padding: 7px 69px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width : 700px) {
+
+    .checkout-body{
+        width: 80%;
+    }
+
+    .delivery-detail .address{
+        width: 80%;
+    }
+
+    .delivery-detail .phone {
+        width: 85%;
+    }
+
+    .order-summary div{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width : 450px) {
+
+    .delivery-detail .address{
+        width: 95%;
+    }
+
+    .delivery-detail .phone {
+        width: 100%;
+    }
+
+    .promo-code .code input{
+        width: 70%;
+    }
+    
+    .promo-code-btn {
+        width: 30%;
+    }
+    
+    .order-summary div{
+        width: 100%;
+    }
+
+    .total a {
+        padding: 7px 45px;
+        font-size: 1rem;
+    }
+    
+}

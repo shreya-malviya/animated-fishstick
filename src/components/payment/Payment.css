@@ -1,0 +1,141 @@
+.payment-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+}
+
+.payment-body{
+    width: 50%;
+    height: 1150px;
+}
+
+.payment-body .heading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.payment-body .heading .icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.1s ease-in;
+}
+
+.payment-body .heading .icon:hover{
+    color: #666;
+}
+
+.payment-body .heading h2{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.payment-methods {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 34px 0px 69px 0px;
+}
+
+.payment-methods h4{
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.payment-body .total {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.payment-body .total .total-amount {
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-body .total .total-amount h3{
+    text-transform: uppercase;
+}
+
+.payment-body .total .total-amount span {
+    color: #666;
+}
+
+.payment-body .total a {
+    width: 400px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
+    padding: 5px 45px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+/* .payment-body .total input {
+    width: 400px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
+    padding: 5px 45px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+} */
+
+@media screen and (max-width : 650px) {
+
+    .payment-body{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width : 500px) {
+
+    .payment-body .total .total-amount {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .payment-body .total a {
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #333;
+        padding: 5px 45px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+    
+}

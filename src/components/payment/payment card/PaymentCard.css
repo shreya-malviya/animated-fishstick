@@ -1,0 +1,311 @@
+.paymentCard-outerSection {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    margin: 7px 0px 18px 0px;
+}
+
+.paymentCard-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paymentCard-body {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paymentCard-body-left {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 11px 0px;
+}
+
+.paymentCard-body-left .box {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paymentCard-body-left .box:nth-child(1) {
+    width: 35%;
+}
+
+.paymentCard-body-left .box:nth-child(1) img {
+    width: 65px;
+    height: 65px;
+}
+
+.paymentCard-body-left .box:nth-child(2) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 65%;
+}
+
+.paymentCard-body-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 11px 0px;
+}
+
+.paymentCard-body-right .box {
+    width: 10%;
+    margin: 0px 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dropdown {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upiDropdown {
+    width: 90%;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.upiDropdown.upiActive {
+    visibility: visible;
+    height: 200px;
+}
+
+.upiDropdown.upiNotActive {
+    visibility: hidden;
+    height: 0px;
+}
+
+.upiDropdown .required-details {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.upiDropdown .required-details span {
+    text-transform: capitalize;
+}
+
+.upiDropdown .required-details span strong {
+    color: red;
+}
+
+.upiDropdown .required-details input {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+.upiDropdown .optional-details {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.upiDropdown .optional-details input {
+    width: 50%;
+    height: 35px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+.upiDropdown .optional-details input[type = text] {
+    margin-right: 18px;
+}
+
+.cardDropdown {
+    width: 90%;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.cardDropdown.cardActive {
+    visibility: visible;
+    height: 200px;
+}
+
+.cardDropdown .optional-details {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardDropdown .optional-details input {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+.cardDropdown .required-details {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardDropdown .required-details > input {
+    width: 50%;
+    height: 35px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+.cardDropdown .required-details > strong  {
+    color: red;
+    margin-left: 7px;
+}
+
+.cardDropdown .required-details input::-webkit-inner-spin-button,
+.cardDropdown .required-details input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.cardDropdown .required-details .other-details {
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cardDropdown .required-details .other-details strong {
+    color: red;
+    margin-left: 3px;
+}
+
+.cardDropdown .required-details .other-details input {
+    height: 100%;
+    border: 2px solid #999;
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+.cardDropdown .required-details .other-details input[type = number] {
+    width: 30%;
+    
+}
+
+.cardDropdown .required-details .other-details input[type = date] {
+    width: 50%;
+    margin-left: 14px;
+}
+
+@media screen and (max-width : 1000px) {
+
+    .paymentCard-body-left {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 11px 0px;
+    }
+
+    .paymentCard-body-left .box {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .paymentCard-body-left .box:nth-child(1) {
+        width: 35%;
+    }
+
+    .paymentCard-body-left .box:nth-child(1) img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .paymentCard-body-left .box:nth-child(2) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 65%;
+    }
+
+    .paymentCard-body-right {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 11px 0px;
+    }
+
+    .paymentCard-body-right .box {
+        width: 100%;
+        height: 100%;
+        margin: 0px 7px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .cardDropdown .required-details {
+        height: 75%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    .cardDropdown .required-details > input {
+        width: 100%;
+    }
+
+    .cardDropdown .required-details .other-details {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cardDropdown .required-details .other-details input[type = date] {
+        width: 70%;
+    }
+
+}
